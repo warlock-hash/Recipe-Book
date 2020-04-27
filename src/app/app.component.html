@@ -1,14 +1,16 @@
 <div class="container">
-  <app-header (rec-or-shop)="onHeaderClickEvent($event)" ></app-header>
+  <app-header (rec-or-shop)="onHeaderClickEvent($event)"></app-header>
   <div class="row">
     <div class="col-md-12">
-      <app-recipes *ngIf="isRecipe_Shopping !== 'shop'" ></app-recipes>
-      <app-shopping-list *ngIf="isRecipe_Shopping === 'shop' " ></app-shopping-list>
+      <app-recipes *ngIf="isRecipe_Shopping !== 'shop'"></app-recipes>
+      <app-shopping-list
+        *ngIf="isRecipe_Shopping === 'shop'"
+      ></app-shopping-list>
     </div>
   </div>
-<!--  <p highlight >This is simple text</p>-->
-<!--  <br>-->
-<!--  <p [appBetterHighlight]="'green'" default="yellow"  >This is simple text</p>-->
-<!--  <br>-->
-<!--  <p *appUnless="2 === 3" >This is false but is will render finally coz our custom structural directive will display it  </p>-->
+  <!--  <p highlight >This is simple text</p>-->
+  <!--  <br>-->
+  <!--  <p [appBetterHighlight]="'green'" default="yellow"  >This is simple text</p>-->
+  <!--  <br>-->
+  <!--  <p *appUnless="2 === 3" >This is false but is will render finally coz our custom structural directive will display it  </p>-->
 </div>
